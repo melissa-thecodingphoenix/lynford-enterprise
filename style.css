@@ -13,7 +13,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: linear-gradient(180deg, rgba(222, 225, 240, 0.446), rgba(255, 255, 255, 0.802));
+    /* background: linear-gradient(180deg, rgba(222, 225, 240, 0.446), rgba(255, 255, 255, 0.802)); */
+    background-color: rgb(255, 255, 255);;
     backdrop-filter: blur(50px);
 }
 .btn {
@@ -169,7 +170,7 @@ p {
 }
 
 .footer {
-    background-color: inear-gradient(180deg, rgba(222, 225, 240, 0.446), rgba(255, 255, 255, 0.802));
+    background-color: rgb(255, 255, 255);
     padding: 70px 0;
 }
 .footer-col {
