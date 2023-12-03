@@ -57,10 +57,7 @@
     position: absolute;
     top: 10%;
     left: 10%;
-    /* top: 30%;
-    left: 50%;
-    -ms-transform: translate(-50%, -30%);
-    transform: translate(-50%, -30%); */
+    bottom: 10%;
     background: linear-gradient(180deg, rgba(12, 20, 65, 0.822), rgba(78, 99, 177, 0.842) );
     border-radius: 16px;
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.404); */
