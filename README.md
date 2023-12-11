@@ -1,2 +1,2 @@
 # lynford-enterprise
-Simple landing page using html and css
+Simple website using html and css
