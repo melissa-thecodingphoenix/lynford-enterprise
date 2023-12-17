@@ -435,16 +435,22 @@ nav .menu .top-text {
 .bottom-bar a:hover {
     color: var(--primary-color);
 }
-.footer h6 {
+.footer h6, h6 a {
     padding-bottom: 20px;
     text-align: center;
     color: var(--tertiary-color);
+    font-size: .8rem;
 }
+.footer h6 a {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
 
 /* Responsiveness for footer */
 /* Medium devices */
 @media (max-width: 830px) {
-    .footer h6 {
+    .footer h6, h6 a {
         padding-bottom: 10px;
         font-size: .6rem;
     }
@@ -460,7 +466,6 @@ nav .menu .top-text {
     }
 
     h6 a {
-        font-size: .6rem;
         text-decoration: underline;
         font-weight: 900;
     }
