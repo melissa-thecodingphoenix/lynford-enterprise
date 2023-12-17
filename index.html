@@ -51,7 +51,7 @@
                     <h2>Exceeding Expectations with Excellence</h2>
                     <p class="card-text">We are experts in hook and drop services for dry container and chassis transportation. <br></p>
                     <p class="card-text2">Experience seamless transport services today!</p>
-                    <a href="contact.html"><button class="btn">Contact Us</button></a>
+                    <a href="#contact"><button class="btn">Contact Us</button></a>
                 </div> 
             </div>
         </section>
@@ -79,6 +79,42 @@
        </div>
    </section>
 
+   <!-- Contact section -->
+   <section class="contact" id="contact">
+        <div class="container">
+            <div class="title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="row">
+                <div class="contact-left">
+                    <h2>Send Us A Message</h2>
+                    <form action="https://formspree.io/f/mvoepzkr" method="post" name="myForm">
+                        <input type="text" class="form-control" placeholder="Full Name" name="Name" required>
+                        <input type="tel" class="form-control" placeholder="Phone Number" name="Phone" required>
+                        <input type="email" class="form-control" placeholder="Email" name="Email" required>
+                        <input type="text" class="form-control" placeholder="Subject" name="Subject" required>
+                        <textarea name="Message" id="message" cols="30" rows="10" placeholder="How Can We Help?" required></textarea>
+                        <input type="button" class="btn" value="Send Message" id="btnsubmit" onclick="submitForm()">
+                    </form>
+                </div>
+
+                <div class="contact-right">
+                    <div>
+                        <h2>Address</h2>
+                        <p>Philadelphia, PA</p>
+                    </div>
+                    <div>
+                        <h2>Call Us</h2>
+                        <p><a href="tel:215-215-3917">(215)215-3917</a></p>
+                    </div>
+                    <div>
+                        <h2>Send Email</h2>
+                        <p><a href="mailto:info@lynfordenterprise.com">info@lynfordenterprise.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
    
 
 
@@ -91,12 +127,23 @@
                 <li><a href="https://www.linkedin.com/company/lynfordenterprise/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
             </ul>
         </div>
-        <h6>©2023 Lynford Enterprise | Designed by The Coding Phoenix | All Rights Reserved</h6>
+        <h6>©2023 Lynford Enterprise | Designed by <a href="https://www.thecodingphoenix.com/">The Coding Phoenix</a> | All Rights Reserved</h6>
     </footer>
 
 
     <!-- JAVASCRIPTS -->
-
+    <script>
+        function submitForm() {
+             // Get the first form with the name
+             // Usually the form name is not repeated
+             // but duplicate names are possible in HTML
+             // Therefore to work around the issue, enforce the correct index
+             var frm = document.getElementsByName('myForm')[0];
+             frm.submit(); // Submit the form
+             frm.reset();  // Reset all form data
+             return false; // Prevent page refresh
+        }
+    </script>
     <!-- Animated typing -->
     <!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> -->
     <!-- <script>
